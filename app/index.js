@@ -9,14 +9,14 @@ var appConfig   = require('./config');
 var appRun      = require('./run');
 
 var application = require('./application');
-var plugin      = require('./plugin');
+var schedule    = require('./schedule');
 
 module.exports = angular.module('myApp', [
   config,
   bootstrap,
   router,
   application,
-  plugin
+  schedule
 ])
 .config(appConfig)
 .run(appRun)

@@ -7,9 +7,6 @@ module.exports = function (Auth, Presence) {
   return {
     restrict: 'A',
     templateUrl: '/views/application/directives/presence/index.html',
-    scope: {
-      channel: '@'
-    },
     link: function (scope, elem, attrs) {
       var channelName = attrs.ngPresence;
 
@@ -20,7 +17,6 @@ module.exports = function (Auth, Presence) {
       scope.$watchCollection(
         function() { return scope.channel; },
         function (newValue, oldValue ) {
-          console.log(scope.channel);
           scope.extraUsers = scope.channel.length - MAX_USER_DISPLAY - 1;
         }
       );

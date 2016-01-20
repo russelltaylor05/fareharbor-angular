@@ -4,7 +4,7 @@ module.exports = function ($stateProvider) {
   $stateProvider
   .state('home', {
     url: '/',
-    templateUrl: '/views/plugin/index.html',
+    templateUrl: '/views/schedule/index.html',
     controller: 'MyAppCtrl',
   });
 };
