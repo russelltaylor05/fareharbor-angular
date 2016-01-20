@@ -1,0 +1,13 @@
+<div class="user-presence">
+  <ul>
+    <li ng-repeat="user in channel track by $index" ng-hide="$index > maxUserDisplay">    
+    <!-- user.username == currentUser.username || -->
+      <img ng-src="{{ user.imageUrl }}" />    
+      <div class="user-hover">
+        {{ user.name }} <br> ({{ user.username }})
+      </div>
+    </li>
+    <span class="extra-users" ng-show="extraUsers > 0">+{{extraUsers}} more</span>
+  </ul>
+  <p class="viewing" ng-show="channel.length > 1">Also Viewing:</p>
+</div>

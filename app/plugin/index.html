@@ -1,0 +1,17 @@
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>Dive Shop - Boat Schedule <button class="pull-right btn btn-primary" ng-click="randomize()">Update Channels</button></h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <ul class="list-group boats">
+      <li ng-repeat="boat in boats" class="list-group-item clearfix">
+        <h3 class="pull-left">{{boat.name}} <span>({{boat.time}})</span></h3>
+        <div ng-presence="{{boat.channelName}}"></div>
+      </li>  
+    </ul>
+  </div>
+</div>
