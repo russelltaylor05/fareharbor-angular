@@ -11,7 +11,7 @@ var appRun      = require('./run');
 var application = require('./application');
 var schedule    = require('./schedule');
 
-module.exports = angular.module('myApp', [
+module.exports  = angular.module('myApp', [
   config,
   bootstrap,
   router,
