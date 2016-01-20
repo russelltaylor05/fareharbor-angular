@@ -1,11 +1,11 @@
 {
-  "name": "angular-boilerplate",
+  "name": "fareharbor-angular",
   "version": "1.0.0",
   "description": "",
-  "repository": "https://github.com/russelltaylor05/angular-boilerplate.git",
-  "main": "app/index.js",
+  "repository": "https://github.com/russelltaylor05/fareharbor-angular",
+  "main": "server.js",
   "scripts": {
-    "start": "gulp start",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
