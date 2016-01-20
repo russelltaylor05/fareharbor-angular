@@ -4,10 +4,8 @@ var _ = require('lodash');
 
 module.exports = function ($http, $filter, Auth) {
   
-  
   var capitalize = $filter('uppercase');
   var channels = {};
-
   
   return {    
     // Subscribe to the channel.
